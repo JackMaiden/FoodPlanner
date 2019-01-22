@@ -2,12 +2,13 @@
 
 namespace FoodPlannerAPI.Models.RecipieModule
 {
-    public class MealTypesDTO
+    public class AllergensDTO
     {
+
         public int ID { get; set; }
 
         public string Name { get; set; }
 
-        public ICollection<int> Recipies { get; set; }
+        public virtual IEnumerable<int> Recipes { get; set; }
     }
 }

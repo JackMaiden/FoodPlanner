@@ -2,7 +2,7 @@
 
 namespace FoodPlannerAPI.Models.RecipieModule
 {
-    public class RecipiesDTO
+    public class RecipesDTO
     {
         public int Id { get; set; }
 
@@ -20,16 +20,16 @@ namespace FoodPlannerAPI.Models.RecipieModule
 
         public string Tips { get; set; }
 
-        public virtual ICollection<int> MealTypes { get; set; }
+        public virtual IEnumerable<int> MealTypes { get; set; }
 
-        public virtual ICollection<int> FoodFilters { get; set; }
+        public virtual IEnumerable<int> FoodFilters { get; set; }
 
-        public virtual ICollection<int> Allergens { get; set; }
+        public virtual IEnumerable<int> Allergens { get; set; }
 
         public int Nutrition { get; set; }
 
-        public virtual ICollection<int> Ingredients { get; set; }
+        public virtual IEnumerable<int> Ingredients { get; set; }
 
-        public virtual ICollection<int> MethodSteps { get; set; }
+        public virtual IEnumerable<int> MethodSteps { get; set; }
     }
 }

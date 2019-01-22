@@ -14,44 +14,44 @@ using FoodPlannerAPI.Models.RecipieModule;
 
 namespace FoodPlannerAPI.Controllers
 {
-    public class RecipiesController : ApiController
+    public class RecipesController : ApiController
     {
         private FoodPlannerAPIContext db = new FoodPlannerAPIContext();
 
-        // GET: api/Recipies
-        public IQueryable<Recipies> GetRecipies()
+        // GET: api/Recipes
+        public IQueryable<Recipes> GetRecipes()
         {
-            return db.Recipies;
+            return db.Recipes;
         }
 
-        // GET: api/Recipies/5
-        [ResponseType(typeof(Recipies))]
-        public async Task<IHttpActionResult> GetRecipies(int id)
+        // GET: api/Recipes/5
+        [ResponseType(typeof(Recipes))]
+        public async Task<IHttpActionResult> GetRecipes(int id)
         {
-            Recipies recipies = await db.Recipies.FindAsync(id);
-            if (recipies == null)
+            Recipes Recipes = await db.Recipes.FindAsync(id);
+            if (Recipes == null)
             {
                 return NotFound();
             }
 
-            return Ok(recipies);
+            return Ok(Recipes);
         }
 
-        // PUT: api/Recipies/5
+        // PUT: api/Recipes/5
         [ResponseType(typeof(void))]
-        public async Task<IHttpActionResult> PutRecipies(int id, Recipies recipies)
+        public async Task<IHttpActionResult> PutRecipes(int id, Recipes Recipes)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            if (id != recipies.Id)
+            if (id != Recipes.Id)
             {
                 return BadRequest();
             }
 
-            db.Entry(recipies).State = EntityState.Modified;
+            db.Entry(Recipes).State = EntityState.Modified;
 
             try
             {
@@ -59,7 +59,7 @@ namespace FoodPlannerAPI.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!RecipiesExists(id))
+                if (!RecipesExists(id))
                 {
                     return NotFound();
                 }
@@ -72,35 +72,35 @@ namespace FoodPlannerAPI.Controllers
             return StatusCode(HttpStatusCode.NoContent);
         }
 
-        // POST: api/Recipies
-        [ResponseType(typeof(Recipies))]
-        public async Task<IHttpActionResult> PostRecipies(Recipies recipies)
+        // POST: api/Recipes
+        [ResponseType(typeof(Recipes))]
+        public async Task<IHttpActionResult> PostRecipes(Recipes Recipes)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            db.Recipies.Add(recipies);
+            db.Recipes.Add(Recipes);
             await db.SaveChangesAsync();
 
-            return CreatedAtRoute("DefaultApi", new { id = recipies.Id }, recipies);
+            return CreatedAtRoute("DefaultApi", new { id = Recipes.Id }, Recipes);
         }
 
-        // DELETE: api/Recipies/5
-        [ResponseType(typeof(Recipies))]
-        public async Task<IHttpActionResult> DeleteRecipies(int id)
+        // DELETE: api/Recipes/5
+        [ResponseType(typeof(Recipes))]
+        public async Task<IHttpActionResult> DeleteRecipes(int id)
         {
-            Recipies recipies = await db.Recipies.FindAsync(id);
-            if (recipies == null)
+            Recipes Recipes = await db.Recipes.FindAsync(id);
+            if (Recipes == null)
             {
                 return NotFound();
             }
 
-            db.Recipies.Remove(recipies);
+            db.Recipes.Remove(Recipes);
             await db.SaveChangesAsync();
 
-            return Ok(recipies);
+            return Ok(Recipes);
         }
 
         protected override void Dispose(bool disposing)
@@ -112,9 +112,9 @@ namespace FoodPlannerAPI.Controllers
             base.Dispose(disposing);
         }
 
-        private bool RecipiesExists(int id)
+        private bool RecipesExists(int id)
         {
-            return db.Recipies.Count(e => e.Id == id) > 0;
+            return db.Recipes.Count(e => e.Id == id) > 0;
         }
     }
 }

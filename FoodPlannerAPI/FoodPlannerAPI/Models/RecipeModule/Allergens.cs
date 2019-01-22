@@ -14,6 +14,6 @@ namespace FoodPlannerAPI.Models.RecipieModule
         public string Name { get; set; }
 
         //[JsonIgnore]
-        public virtual ICollection<Recipies> Recipies { get; set; }
+        public virtual ICollection<Recipes> Recipes { get; set; }
     }
 }

@@ -31,6 +31,6 @@ namespace FoodPlannerAPI.Models
 
         public System.Data.Entity.DbSet<FoodPlannerAPI.Models.RecipieModule.Nutrition> Nutritions { get; set; }
 
-        public System.Data.Entity.DbSet<FoodPlannerAPI.Models.RecipieModule.Recipies> Recipies { get; set; }
+        public System.Data.Entity.DbSet<FoodPlannerAPI.Models.RecipieModule.Recipes> Recipes { get; set; }
     }
 }

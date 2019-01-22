@@ -26,7 +26,7 @@ namespace FoodPlannerAPI.Controllers
                            {
                                ID = r.ID,
                                Name = r.Name,
-                               Recipies = (from s in r.Recipies select s.Id).ToList()
+                               Recipes = (from s in r.Recipes select s.Id).AsEnumerable().ToList()
                            };
 
             return result;

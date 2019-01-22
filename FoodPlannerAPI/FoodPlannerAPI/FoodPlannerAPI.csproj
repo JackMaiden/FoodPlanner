@@ -201,7 +201,7 @@
     <Compile Include="Controllers\MealTypesController.cs" />
     <Compile Include="Controllers\MethodStepsController.cs" />
     <Compile Include="Controllers\NutritionsController.cs" />
-    <Compile Include="Controllers\RecipiesController.cs" />
+    <Compile Include="Controllers\RecipesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -209,21 +209,25 @@
     <Compile Include="Migrations\201901191238376_init.Designer.cs">
       <DependentUpon>201901191238376_init.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201901221918542_fixedSpelling.cs" />
+    <Compile Include="Migrations\201901221918542_fixedSpelling.Designer.cs">
+      <DependentUpon>201901221918542_fixedSpelling.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\FoodPlannerAPIContext.cs" />
-    <Compile Include="Models\RecipieModuleDTO\AllergensDTO.cs" />
-    <Compile Include="Models\RecipieModuleDTO\FoodFiltersDTO.cs" />
-    <Compile Include="Models\RecipieModuleDTO\IngredientsDTO.cs" />
-    <Compile Include="Models\RecipieModuleDTO\MealTypesDTO.cs" />
-    <Compile Include="Models\RecipieModuleDTO\MethodStepsDTO.cs" />
-    <Compile Include="Models\RecipieModuleDTO\RecipiesDTO.cs" />
-    <Compile Include="Models\RecipieModule\Allergens.cs" />
-    <Compile Include="Models\RecipieModule\FoodFilters.cs" />
-    <Compile Include="Models\RecipieModule\Ingredients.cs" />
-    <Compile Include="Models\RecipieModule\MealTypes.cs" />
-    <Compile Include="Models\RecipieModule\MethodSteps.cs" />
-    <Compile Include="Models\RecipieModule\Nutrition.cs" />
-    <Compile Include="Models\RecipieModule\Recipies.cs" />
+    <Compile Include="Models\RecipeModuleDTO\AllergensDTO.cs" />
+    <Compile Include="Models\RecipeModuleDTO\FoodFiltersDTO.cs" />
+    <Compile Include="Models\RecipeModuleDTO\IngredientsDTO.cs" />
+    <Compile Include="Models\RecipeModuleDTO\MealTypesDTO.cs" />
+    <Compile Include="Models\RecipeModuleDTO\MethodStepsDTO.cs" />
+    <Compile Include="Models\RecipeModuleDTO\RecipesDTO.cs" />
+    <Compile Include="Models\RecipeModule\Allergens.cs" />
+    <Compile Include="Models\RecipeModule\FoodFilters.cs" />
+    <Compile Include="Models\RecipeModule\Ingredients.cs" />
+    <Compile Include="Models\RecipeModule\MealTypes.cs" />
+    <Compile Include="Models\RecipeModule\MethodSteps.cs" />
+    <Compile Include="Models\RecipeModule\Nutrition.cs" />
+    <Compile Include="Models\RecipeModule\Recipes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -315,6 +319,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201901191238376_init.resx">
       <DependentUpon>201901191238376_init.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901221918542_fixedSpelling.resx">
+      <DependentUpon>201901221918542_fixedSpelling.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -8,6 +8,6 @@ namespace FoodPlannerAPI.Models.RecipieModule
 
         public string Ingredient { get; set; }
 
-        public int Recipie { get; set; }
+        public int Recipe { get; set; }
     }
 }

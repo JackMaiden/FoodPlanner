@@ -26,7 +26,7 @@ namespace FoodPlannerAPI.Controllers
                    {
                        Id = i.Id,
                        Ingredient = i.Ingredient,
-                       Recipie = i.Recipie.Id
+                       Recipe = i.Recipe.Id
                    };
 
             return result;

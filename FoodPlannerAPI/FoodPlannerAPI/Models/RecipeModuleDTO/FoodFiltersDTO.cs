@@ -8,6 +8,6 @@ namespace FoodPlannerAPI.Models.RecipieModule
 
         public string Name { get; set; }
 
-        public virtual ICollection<int> Recipies { get; set; }
+        public virtual IEnumerable<int> Recipes { get; set; }
     }
 }

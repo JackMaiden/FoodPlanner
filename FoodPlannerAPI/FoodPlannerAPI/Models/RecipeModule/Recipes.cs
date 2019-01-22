@@ -5,7 +5,7 @@ using FoodPlannerAPI.Models.RecipieModule;
 
 namespace FoodPlannerAPI.Models.RecipieModule
 {
-    public class Recipies
+    public class Recipes
     {
         [Key]
         public int Id { get; set; }

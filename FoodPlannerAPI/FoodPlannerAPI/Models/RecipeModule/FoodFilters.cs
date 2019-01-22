@@ -5,18 +5,15 @@ using FoodPlannerAPI.Models.RecipieModule;
 
 namespace FoodPlannerAPI.Models.RecipieModule
 {
-    public class MethodSteps
+    public class FoodFilters
     {
         [Key]
-        public int Id { get; set; }
+        public int ID { get; set; }
 
         [Required]
-        public int StepNo { get; set; }
+        public string Name { get; set; }
 
-        [Required]
-        public string Step { get; set; }
-
-        [Required]
-        public Recipies Recipie { get; set; }
+        //[JsonIgnore]
+        public virtual ICollection<Recipes> Recipes { get; set; }
     }
 }
