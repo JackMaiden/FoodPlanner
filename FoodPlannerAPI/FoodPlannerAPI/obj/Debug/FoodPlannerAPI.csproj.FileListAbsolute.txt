@@ -215,3 +215,4 @@ D:\Development\FoodPlanner\FoodPlannerAPI\FoodPlannerAPI\obj\Debug\FoodPlannerAP
 D:\Development\FoodPlanner\FoodPlannerAPI\FoodPlannerAPI\obj\Debug\FoodPlannerAPI.dll
 D:\Development\FoodPlanner\FoodPlannerAPI\FoodPlannerAPI\obj\Debug\FoodPlannerAPI.pdb
 D:\Development\FoodPlanner\FoodPlannerAPI\FoodPlannerAPI\obj\Debug\FoodPlannerAPI.Migrations.fixedSpelling.resources
+D:\Development\FoodPlanner\FoodPlannerAPI\FoodPlannerAPI\obj\Debug\FoodPlannerAPI.Migrations.nullablesNutition.resources

@@ -213,6 +213,10 @@
     <Compile Include="Migrations\201901221918542_fixedSpelling.Designer.cs">
       <DependentUpon>201901221918542_fixedSpelling.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201901231815378_nullablesNutition.cs" />
+    <Compile Include="Migrations\201901231815378_nullablesNutition.Designer.cs">
+      <DependentUpon>201901231815378_nullablesNutition.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\FoodPlannerAPIContext.cs" />
     <Compile Include="Models\RecipeModuleDTO\AllergensDTO.cs" />
@@ -322,6 +326,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201901221918542_fixedSpelling.resx">
       <DependentUpon>201901221918542_fixedSpelling.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901231815378_nullablesNutition.resx">
+      <DependentUpon>201901231815378_nullablesNutition.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
